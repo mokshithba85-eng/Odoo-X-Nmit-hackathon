@@ -1,4 +1,4 @@
-# ECOFINDS - Starter Fullstack Prototype
+# ECOFINDS :  Sustainable Second-Hand Marketplace - Starter Fullstack Prototype
 
 This archive contains a runnable starter prototype for ECOFINDS:
 - Backend: Node.js + Express + MongoDB (Mongoose)
