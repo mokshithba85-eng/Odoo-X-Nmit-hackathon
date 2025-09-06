@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 dark:bg-slate-900 text-gray-900 dark:text-white transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-eco-green-500 hover:bg-eco-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-eco-green-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-eco-blue-500 hover:bg-eco-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-eco-blue-500 focus:ring-offset-2;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-eco-green-500 text-eco-green-500 hover:bg-eco-green-500 hover:text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-eco-green-500 focus:ring-offset-2;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-eco-green-500 focus:border-eco-green-500 transition-colors duration-200;
+  }
+  
+  .text-primary {
+    @apply text-gray-900 dark:text-white;
+  }
+  
+  .text-secondary {
+    @apply text-gray-600 dark:text-gray-300;
+  }
+  
+  .text-muted {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-slate-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-eco-green-400 dark:bg-eco-green-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-eco-green-500 dark:bg-eco-green-500;
+}
+
+/* Sustainability theme animations */
+@keyframes eco-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.eco-pulse {
+  animation: eco-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Gradient backgrounds for sustainability theme */
+.eco-gradient {
+  background: linear-gradient(135deg, #2E7D32 0%, #0288D1 50%, #8D6E63 100%);
+}
+
+.eco-gradient-light {
+  background: linear-gradient(135deg, #e8f5e8 0%, #e3f2fd 50%, #efebe9 100%);
+}
+
+.eco-gradient-dark {
+  background: linear-gradient(135deg, #1b5e20 0%, #0d47a1 50%, #3e2723 100%);
+}

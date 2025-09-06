@@ -1,0 +1,85 @@
+# ============================
+# Node.js / JavaScript
+# ============================
+node_modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next
+_test_
+
+
+# ============================
+# Build Output
+# ============================
+dist
+build
+.next
+out
+coverage
+
+# ============================
+# Local Environment Files
+# ============================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ============================
+# Logs
+# ============================
+logs
+*.log
+*.log.*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ============================
+# OS / IDE Files
+# ============================
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+
+# ============================
+# Next.js Specific
+# ============================
+.next/
+.vercel/
+*.tsbuildinfo
+
+# ============================
+# Testing / Coverage
+# ============================
+coverage
+.nyc_output
+jest-html-reporters-*
+
+# ============================
+# MongoDB Data Dumps
+# ============================
+dump/
+*.bson
+*.json
+*.lock
+
+# ============================
+# Misc
+# ============================
+*.tgz
+*.zip
+*.tar
+*.gz
